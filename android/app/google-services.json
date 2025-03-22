@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615540133695",
+    "project_id": "fir-cf386",
+    "storage_bucket": "fir-cf386.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615540133695:android:980632acb7d8ddad9a0d8a",
+        "android_client_info": {
+          "package_name": "com.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615540133695-95kgv0e6b9m5n4fs8gvfjucj6d6llll5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIpZa42VdkGqc4-nekN9Bjd_msN_iksk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615540133695-95kgv0e6b9m5n4fs8gvfjucj6d6llll5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
