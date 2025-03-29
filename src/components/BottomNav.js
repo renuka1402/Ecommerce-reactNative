@@ -2,10 +2,11 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import  FontAwesome from "react-native-vector-icons/Ionicons";
 import  Feather  from "react-native-vector-icons/Ionicons";
-import HomeScreen from "./home";
-import CartScreen from "./cartItem";
-import Wishlist from "./wishlist";
-import UserProfile from "./profile";
+import HomeScreen from "../screen/Home";
+import CartScreen from "./CartItems";
+import Wishlist from "../screen/WishList";
+
+import EditProfileScreen from "./Profile";
 
 const Tab = createBottomTabNavigator();
 
@@ -33,7 +34,7 @@ export default function BottomTabNavigator() {
     }} 
       />
             <Tab.Screen 
-        name="wishlist" 
+        name="Wishlist" 
         component={Wishlist} 
         options={{ tabBarIcon: () => <Feather name="heart" size={24} color="gray" /> ,
    
@@ -44,9 +45,9 @@ export default function BottomTabNavigator() {
     }} 
       />
                 <Tab.Screen 
-        name="user" 
-        component={UserProfile} 
-        options={{ tabBarIcon: () => <FontAwesome name="circle-user" size={24} color="gray" />,
+        name="User" 
+        component={EditProfileScreen} 
+        options={{ tabBarIcon: () => <FontAwesome name="person" size={24} color="gray" />,
    
  
         tabBarActiveTintColor: "blue",

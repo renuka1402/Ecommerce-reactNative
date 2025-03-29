@@ -1,27 +1,29 @@
-import React from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
-const Slider1 = ({ navigation }) => {
+
+
+import React from 'react';
+import { View, Text, Image, TouchableOpacity, StyleSheet,ScrollView } from 'react-native';
+
+const Slider2 = ({ navigation }) => {
   return (
+ <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
     <View style={styles.container}>
-      <Image source={require("./images/2nd.png")} style={styles.image} />
+      <Image source={require(".././assets/3rd.png")} style={styles.image} />
       <Text style={styles.text}>We Provide High Quality Products Just For You</Text>
 
-   
+
       <View style={styles.dotsContainer}>
+        <View style={styles.dot } />
         <View style={styles.dot} />
         <View style={styles.activeDot} />
-        <View style={styles.dot} />
       </View>
 
-  
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Slider2')}>
-        <Text style={styles.buttonText}>Next</Text>
+ 
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')}>
+        <Text style={styles.buttonText}>Get tsater</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.replace('Signup')}>
-        <Text style={styles.skipText}>Skip</Text>
-      </TouchableOpacity>
-    </View>
+
+    </View></ScrollView>
   );
 };
 
@@ -63,10 +65,9 @@ const styles = StyleSheet.create({
   },
   activeDot:
   {
-   backgroundColor: '#007BFF',
+    backgroundColor: '#007BFF',
     width: 14,
-    height: 10,
-     marginHorizontal: 4,
+    height: 10, marginHorizontal: 4,
     borderRadius: 5,
   },
   button: {
@@ -85,10 +86,10 @@ const styles = StyleSheet.create({
   },
   skipText:
   {
-    color:  '#007BFF',
+    color: "#007BFF",
     fontSize: 16,
     fontWeight: 'bold',
     marginTop: 10
   },
 });
-export default Slider1;
+export default Slider2;

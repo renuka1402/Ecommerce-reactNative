@@ -5,7 +5,7 @@ import {
 } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import auth from "@react-native-firebase/auth"; // Firebase Auth Import
+import auth from "@react-native-firebase/auth"; 
 
 const ForgotPasswordScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -29,11 +29,11 @@ const ForgotPasswordScreen = ({ navigation }) => {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={styles.container}>
         <TouchableOpacity activeOpacity={1} onPress={() => navigation.goBack()} style={styles.arrow}>
-          <Ionicons name="chevron-back" size={20} color="gray" />
+          <Ionicons name="chevron-back" size={17} color="gray" />
         </TouchableOpacity>
 
         <Text style={styles.title}>Forgot Password</Text>
-        <Image source={require("./images/password.jpg")} style={styles.icon1} />
+        <Image source={require(".././assets/2nd.png")} style={styles.icon1} />
 
         <Text style={styles.label}>E-mail</Text>
         <View style={styles.inputContainer}>
@@ -79,12 +79,11 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 50,
     left: 20,
-    shadowRadius: 5,
-    elevation: 1,
+   
   },
   label: {
     alignSelf: "flex-start",
-    fontSize: 14,
+    fontSize: 13,
     color: "#000",
     marginBottom: 8,
     fontWeight: "bold",
@@ -98,7 +97,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#D1D1D1",
     width: "100%",
-    height: 50,
+    height: 45,
     marginBottom: 20,
   },
   icon: {
@@ -106,7 +105,7 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    fontSize: 14,
+    fontSize: 12,
     color: "#000",
   },
   getCodeButton: {
@@ -125,3 +124,4 @@ const styles = StyleSheet.create({
 });
 
 export default ForgotPasswordScreen;
+``
